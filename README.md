@@ -8,6 +8,18 @@ The project follows a complete data analytics workflow, from data inspection and
 
 ---
 
+## 🌐 Live Website
+
+**AgriInsight is now live!**
+
+🔗 **[Visit AgriInsight – Live Website](https://agri-insight-teal.vercel.app/)**
+
+Explore the interactive platform to understand seasonal agricultural performance through data visualizations, statistical analysis, environmental patterns, resource utilization, and economic insights.
+
+**Deployment Platform:** Vercel
+
+---
+
 ## 📌 Project Overview
 
 Agricultural performance can vary significantly depending on seasonal conditions, environmental factors, resource availability, and economic factors.
@@ -37,15 +49,15 @@ The analysis is implemented entirely in a **Jupyter Notebook**, with every major
 
 **Dataset:** `seasonal_agriculture_performance_dataset.csv`
 
-| Property        | Details            |
-| --------------- | ------------------ |
-| Total Records   | 4,000              |
-| Total Variables | 28                 |
-| States          | 8                  |
-| Districts       | 10                 |
-| Crops           | 8                  |
-| Seasons         | Kharif, Rabi, Zaid |
-| Duplicate Rows  | 0                  |
+| Property | Details |
+|---|---|
+| Total Records | 4,000 |
+| Total Variables | 28 |
+| States | 8 |
+| Districts | 10 |
+| Crops | 8 |
+| Seasons | Kharif, Rabi, Zaid |
+| Duplicate Rows | 0 |
 
 ### Dataset Variables
 
@@ -105,11 +117,11 @@ The dataset was inspected for duplicate records, missing values, data types, and
 
 Missing values were identified only in:
 
-| Column              | Missing Values |
-| ------------------- | -------------: |
-| `Rainfall_mm`       |             48 |
-| `Soil_Moisture_pct` |             40 |
-| `Yield_Tonnes_Ha`   |             32 |
+| Column | Missing Values |
+|---|---:|
+| `Rainfall_mm` | 48 |
+| `Soil_Moisture_pct` | 40 |
+| `Yield_Tonnes_Ha` | 32 |
 
 These missing values were handled using **season/crop-group median imputation**, preserving the underlying seasonal and crop-level characteristics of the dataset.
 
@@ -176,8 +188,6 @@ Kharif emerged as the strongest-performing season across several major agricultu
 * Highest water-use efficiency
 * Strong overall agricultural and economic performance
 
----
-
 ### 🥈 Rabi — Intermediate Performance
 
 Rabi generally occupied the middle position between Kharif and Zaid.
@@ -186,8 +196,6 @@ Rabi generally occupied the middle position between Kharif and Zaid.
 * **Average Profit:** ₹87,689 per farm
 * Moderate resource efficiency
 * Moderate overall agricultural performance
-
----
 
 ### 🥉 Zaid — Weakest Overall Performance
 
@@ -204,11 +212,11 @@ This indicates that lower profitability is primarily associated with differences
 
 ## 📊 Seasonal Performance Summary
 
-| Metric              |       Kharif |        Rabi |         Zaid |
-| ------------------- | -----------: | ----------: | -----------: |
-| Mean Yield (t/ha)   |     **5.64** |        5.08 |         4.67 |
-| Average Profit/Farm | **₹178,915** |     ₹87,689 | **–₹24,805** |
-| Overall Performance |   🥇 Highest | 🥈 Moderate |    🥉 Lowest |
+| Metric | Kharif | Rabi | Zaid |
+|---|---:|---:|---:|
+| Mean Yield (t/ha) | **5.64** | 5.08 | 4.67 |
+| Average Profit/Farm | **₹178,915** | ₹87,689 | **–₹24,805** |
+| Overall Performance | 🥇 Highest | 🥈 Moderate | 🥉 Lowest |
 
 ---
 
@@ -341,7 +349,6 @@ Tracking rainfall, soil moisture, temperature, and other environmental indicator
 ### Statistical Analysis
 
 * **SciPy**
-
   * Shapiro-Wilk
   * Levene's Test
   * One-Way ANOVA
@@ -440,40 +447,4 @@ Therefore, replacing the dataset with an updated compatible CSV and rerunning th
 
 This project demonstrates how data analytics and statistical methods can be used to evaluate agricultural performance across different cropping seasons.
 
-The analysis identifies **Kharif as the strongest-performing season**, while **Zaid shows comparatively weak yield, water efficiency, and profitability**. Environmental factors such as rainfall and soil moisture also show meaningful associations with agricultural yield.
-
-Statistical testing further confirms that the observed seasonal differences are significant.
-
-Overall, the project demonstrates how **data-driven seasonal planning, resource optimization, environmental monitoring, and economic analysis** can support more informed agricultural decision-making.
-
----
-
-## 👨‍💻 Author
-
-**Pranjal Sharma**
-
-B.Tech — Computer Science Engineering (Artificial Intelligence)
-**KIET Group of Institutions**
-
----
-
-## ⭐ Project Highlights
-
-```text
-📊 4,000 Farm Records
-🌾 8 Crops
-🌍 8 States
-📍 10 Districts
-☀️ 3 Cropping Seasons
-📈 Complete EDA
-💧 Resource Efficiency Analysis
-💰 Economic Analysis
-🧪 Statistical Hypothesis Testing
-🤖 Data-Driven Recommendations
-```
-
----
-
-### 📌 Project Type
-
-**Major Project | Data Analytics | Agricultural Analytics | Exploratory Data Analysis | Statistical Analysis | VOIS AICTE Batch 1 (2026–2027)**
+The analysis identifies **Kharif as the strongest-performing season**, while **Zaid shows comparatively weak yield, water efficiency, and profitability**. Environmental factors such as rainfall
